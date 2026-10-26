@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08090d">
+  <title>Julian's iPhone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="phone" class="phone" aria-label="Julian's fictional iPhone simulator">
+    <section id="lockscreen" class="lockscreen screen active">
+      <div class="status"><span>03:37</span><span class="status-right"><span class="signal">▮▮▮</span><span class="wifi">⌁</span><span class="battery"><i></i></span></span></div>
+      <div class="lock-date">Wednesday, 9 December</div>
+      <div class="lock-time">03:37</div>
+      <div id="lock-notifications" class="lock-notifications"></div>
+      <div class="pin-panel">
+        <div class="pin-title">Enter Passcode</div><div id="pin-dots" class="pin-dots"><i></i><i></i><i></i><i></i></div>
+        <div id="pin-pad" class="pin-pad"></div>
+        <div id="pin-error" class="pin-error" aria-live="polite"></div>
+      </div>
+      <div class="lock-bottom"><span class="round-shortcut">⌁</span><span class="home-indicator"></span><span class="round-shortcut">◉</span></div>
+    </section>
+    <section id="homescreen" class="homescreen screen">
+      <div class="status"><span>03:37</span><span class="status-right"><span class="signal">▮▮▮</span><span class="wifi">⌁</span><span class="battery"><i></i></span></span></div>
+      <div class="home-date">Wednesday, 9 December</div>
+      <div class="app-grid" id="app-grid"></div>
+      <div class="dock" id="dock"></div>
+      <div class="home-indicator"></div>
+    </section>
+    <section id="appscreen" class="appscreen screen">
+      <div class="status"><span>03:37</span><span class="status-right"><span class="signal">▮▮▮</span><span class="wifi">⌁</span><span class="battery"><i></i></span></span></div>
+      <div class="app-header"><button id="back-home" class="back-button" aria-label="Back to Home">‹</button><div id="app-title">App</div><button id="app-action" class="header-action" aria-label="App action"></button></div>
+      <div id="app-content" class="app-content"></div>
+      <div class="home-indicator"></div>
+    </section>
+    <div id="toast" class="toast" aria-live="polite"></div>
+    <div id="notification-banner" class="notification-banner" role="button" tabindex="0"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
